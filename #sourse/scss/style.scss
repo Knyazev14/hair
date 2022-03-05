@@ -171,9 +171,9 @@ h2{
 }
 
 .main__banner-text {
-	@include adaptiv-padding-bottom(38, 84);
 	position: relative;
 	z-index: 1;
+	@include adaptiv-margin-bottom(39, 18);
 }
 .banner-text {
 	@include adaptiv-font(20, 12);
@@ -181,6 +181,7 @@ h2{
 }
 
 .button {
+	@include adaptiv-margin-bottom(38, 84);
 	@include adaptiv-width(365, 173);
 	@include adaptiv-font(25, 13);
 	@include adaptiv-height(74, 38);
@@ -205,6 +206,7 @@ h2{
 	position: relative;
 	z-index: 1;
 	transform: translate(0, -135%);
+	@include adaptiv-margin-bottom(80, 50);
 }
 .catalog-item {
 	width: 314px;
@@ -227,9 +229,6 @@ h2{
 	margin: 24px 0 37px 0;
 	line-height: 100%;
 }
-.catalog-link__box {
-
-}
 .catalog-link {
 	@include adaptiv-width(173, 93);
 	border: 1px solid #C35F6C;
@@ -244,12 +243,13 @@ h2{
 	@include adaptiv-padding-bottom(15, 8);
 	@include adaptiv-font (20, 12);
 }
-
 //--------------------------------------------
 //Main-content
 .main-content {
+	@include adaptiv-margin-bottom(100, 50);
 }
 .main-content__row {
+	margin: -283px 0 0 0 ;
 	display: flex;
 	justify-content: space-between;
 }
@@ -260,12 +260,13 @@ h2{
 }
 .main-content__item-image {
 	margin: 0 20px 0 0;
+	@include adaptiv-width(72, 52);
+	@include adaptiv-height(50, 38);
 }
-
 .main-content__item-text {
-	font-style: 20px;
+	@include adaptiv-font(20, 15);
 	font-weight: 700;
-	line-height: 23px;
+	line-height: 100%;
 	color: #15A490;
 }
 //-------------------------------------
@@ -273,9 +274,9 @@ h2{
 .main-about {
 }
 .main-about__title {
-	font-size: 40px;
+	@include adaptiv-font (40, 20);
 	font-weight: 700;
-	line-height: 47px;
+	line-height: 100%;
 	margin: 0 0 21px 0;
 }
 .main-about__sub-title {
@@ -497,6 +498,16 @@ h2{
 	}
 	
 }
+@media (max-width: 767px){
+	.main-content__row{
+		flex-direction: column;
+	}
+	.main-conent__item{
+		display: flex;
+		justify-content: space-between;
+		margin: 0 0 11px 0;
+	}
+}
 @media (max-width:650px){
 	.main__banner-image{
 		height: 462px;
@@ -520,17 +531,30 @@ h2{
 		border-radius: 10px;
 		display: flex;
 		flex-direction: row;
+		justify-content: space-around;
 		align-items: center;
-		justify-content: space-between;
 		margin: 0 0 10px 0;
-		padding: 0 11px;
 		&:last-child{
 			margin: 0;
 		}
-	}
-	.catalog-title {
+}
+	.catalog-title{
+		display: inline-block;
+		text-align: center;
 		margin: 0;
-		display: flex;
-		flex-wrap: wrap;
+	}
+	.main-content__row {
+		margin: -300px 0 0 0 ;
+	}
+}
+@media(max-width: 320px){
+	.main__banner-catalog{
+		transform: translate(0, -163%);
+	}
+	.catalog-item{
+		height: 59px;
+	}
+	.main-content__row {
+		margin: -322px 0 0 0 ;
 	}
 }
