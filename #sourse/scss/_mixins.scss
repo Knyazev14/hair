@@ -9,7 +9,7 @@
 	}
 }
 
-@mixin adaptiv-width($pcSize, $mobSize) {   // Размер шрифта на макете и размер шрифта на мобильном устройстве
+@mixin adaptiv-width($pcSize, $mobSize) {   //Ширина
 	$addSize: $pcSize - $mobSize;
 	$addMobSize: $addSize + $addSize  * 0.7;
 	@media (max-width: 767px) {
@@ -20,7 +20,7 @@
 	}
 }
 
-@mixin adaptiv-padding-right($pcSize, $mobSize) {   // Размер шрифта на макете и размер шрифта на мобильном устройстве
+@mixin adaptiv-padding-right($pcSize, $mobSize) {   //Правый отступ
 	$addSize: $pcSize - $mobSize;
 	$addMobSize: $addSize + $addSize  * 0.7;
 	@media (max-width: 767px) {
@@ -31,7 +31,7 @@
 	}
 }
 
-@mixin adaptiv-padding-left($pcSize, $mobSize) {   // Размер шрифта на макете и размер шрифта на мобильном устройстве
+@mixin adaptiv-padding-left($pcSize, $mobSize) {   //Левый отступ
 	$addSize: $pcSize - $mobSize;
 	$addMobSize: $addSize + $addSize  * 0.7;
 	@media (max-width: 767px) {
@@ -42,7 +42,7 @@
 	}
 }
 
-@mixin adaptiv-padding-top($pcSize, $mobSize) {   // Размер шрифта на макете и размер шрифта на мобильном устройстве
+@mixin adaptiv-padding-top($pcSize, $mobSize) {   // Верхний отступ
 	$addSize: $pcSize - $mobSize;
 	$addMobSize: $addSize + $addSize  * 0.7;
 	@media (max-width: 767px) {
@@ -53,7 +53,7 @@
 	}
 }
 
-@mixin adaptiv-padding-bottom($pcSize, $mobSize) {   // Размер шрифта на макете и размер шрифта на мобильном устройстве
+@mixin adaptiv-padding-bottom($pcSize, $mobSize) {   // Нижний отступ
 	$addSize: $pcSize - $mobSize;
 	$addMobSize: $addSize + $addSize  * 0.7;
 	@media (max-width: 767px) {
@@ -64,7 +64,7 @@
 	}
 }
 
-@mixin adaptiv-height($pcSize, $mobSize) {   // Размер шрифта на макете и размер шрифта на мобильном устройстве
+@mixin adaptiv-height($pcSize, $mobSize) {   // Высота
 	$addSize: $pcSize - $mobSize;
 	$addMobSize: $addSize + $addSize  * 0.7;
 	@media (max-width: 767px) {
@@ -75,7 +75,7 @@
 	}
 }
 
-@mixin adaptiv-margin-bottom($pcSize, $mobSize) {   // Размер шрифта на макете и размер шрифта на мобильном устройстве
+@mixin adaptiv-margin-bottom($pcSize, $mobSize) {  
 	$addSize: $pcSize - $mobSize;
 	$addMobSize: $addSize + $addSize  * 0.7;
 	@media (max-width: 767px) {
