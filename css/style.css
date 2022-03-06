@@ -1022,6 +1022,7 @@ h2 {
   }
   .main-brand {
     min-height: 419px;
+    padding: 0 0 20px 0;
   }
   .main-brand__row {
     -ms-flex-wrap: wrap;
@@ -1031,7 +1032,7 @@ h2 {
     margin-bottom: 13px;
   }
   .b {
-    margin-bottom: 16px;
+    margin-bottom: 9px;
   }
   .c {
     margin-bottom: 14px;
