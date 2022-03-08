@@ -72,10 +72,10 @@ h1{
 .header-item__flex{
 	display: flex;
 }
+//Кнопка поиска====================================================
 .header__search {
 	margin: 0 40px 0 0;
 }
-//Кнопка поиска====================================================
 .header-search-box{
 	height: 40px;
 	border-radius: 36px;
@@ -94,6 +94,7 @@ h1{
 	float: left;
 	transition: 0.3s;
 	width: 179px;
+	padding: 1px 0;
 }
 ::placeholder {
 	color: #2BDAC1;
