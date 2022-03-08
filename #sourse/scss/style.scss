@@ -368,10 +368,13 @@ h2{
 	}
 	.header-search-txt{
 		width: 0;
+		position: relative;
+		bottom: 2px;
 	}
 	.header-search-box{
 		height: 35px;
 		padding: 10px;
+		position: relative;
 	}
 	.header-search-box:hover{
 		.header-search-txt{
@@ -653,10 +656,6 @@ h2{
 	}
 	.header-item__flex{
 		flex: 0 0 187px;
-	}
-	.header-search-txt{
-		font-size: 14px;
-		padding: 1px 0;
 	}
 	.header-search-box:hover{
 		.header-search-txt{
