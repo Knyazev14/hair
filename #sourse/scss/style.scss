@@ -326,6 +326,7 @@ h2{
 .main-brand {
 	background-color: rgba(246, 249, 247, 0.99);
 	min-height: 344px;
+	margin: 0 0 30px 0;
 }
 .main-brand__title p{
 	@include adaptiv-font (40, 20);
@@ -516,7 +517,6 @@ h2{
 	}
 	.main-brand{
 		min-height: 419px;
-		margin: 0 0 30px 0;
 	}
 	.main-brand__row{
 		flex-wrap: wrap;

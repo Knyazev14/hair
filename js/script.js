@@ -1,6 +1,5 @@
 'use strict'
-//================================
-//Burger
+//Burger=================================================
 const menuIcon = document.querySelector('.menu__icon');
 if(menuIcon){
 	const menuBody = document.querySelector('.header-menu');
@@ -9,7 +8,7 @@ if(menuIcon){
 	menuBody.classList.toggle("_active");
 });
 }
-//================================
+//=======================================================
 
 
 
