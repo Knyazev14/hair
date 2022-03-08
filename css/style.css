@@ -164,26 +164,34 @@ h1 {
   margin: 0 40px 0 0;
 }
 
-.search-header {
-  border-radius: 36px;
-  border: 1px #2BDAC1 solid;
-  position: relative;
-}
-
-.search-header__button {
-  position: absolute;
-  background-color: transparent;
-  top: 9px;
-  right: 25px;
-}
-
-.search-header__input {
-  padding: 11px 0 11px 25px;
-  border-radius: 36px;
-  background-color: transparent;
-  width: 253px;
+.header-search-box {
   height: 40px;
-  color: #2BDAC1;
+  border-radius: 36px;
+  border: 1px solid #2BDAC1;
+  padding: 11px 25px;
+}
+
+.header-search-btn {
+  background-color: transparent;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-search-txt {
+  background-color: transparent;
+  float: left;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 0;
+  width: 179px;
 }
 
 ::-webkit-input-placeholder {
@@ -846,19 +854,15 @@ h2 {
   .header__email {
     display: none;
   }
-  .search-header__input {
-    padding: 11px 0 11px 25px;
-    border-radius: 20px;
-    background-color: transparent;
-    color: #2BDAC1;
-    width: 35px;
-    height: 35px;
+  .header-search-txt {
+    width: 0;
   }
-  .search-header__button {
-    position: absolute;
-    background-color: transparent;
-    top: 10px;
-    left: 10px;
+  .header-search-box {
+    height: 35px;
+    padding: 10px;
+  }
+  .header-search-box:hover .header-search-txt {
+    width: 50px;
   }
   .icon-search:before {
     content: "\e900";
@@ -893,8 +897,8 @@ h2 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 187px;
-            flex: 0 0 187px;
+        -ms-flex: 0 0 200px;
+            flex: 0 0 200px;
   }
   .basket-link {
     width: 35px;
@@ -1196,6 +1200,17 @@ h2 {
   }
   .main-content__row {
     margin: -322px 0 0 0;
+  }
+  .header-item__flex {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 187px;
+            flex: 0 0 187px;
+  }
+  .header-search-txt {
+    font-size: 8px;
+  }
+  .header-search-box:hover .header-search-txt {
+    width: 34px;
   }
 }
 /*# sourceMappingURL=style.css.map */

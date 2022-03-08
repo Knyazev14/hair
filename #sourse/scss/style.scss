@@ -75,30 +75,32 @@ h1{
 .header__search {
 	margin: 0 40px 0 0;
 }
-.search-header {
-	border-radius: 36px;
-	border: 1px #2BDAC1 solid;
-	position: relative;
-	
-}
-.search-header__button {
-	position: absolute;
-	background-color: transparent;
-	top: 9px;
-	right: 25px;
-}
-.search-header__input {
-	padding: 11px 0 11px 25px;
-	border-radius: 36px;
-	background-color: transparent;
-	width: 253px;
+//Кнопка поиска====================================================
+.header-search-box{
 	height: 40px;
-	color: #2BDAC1;
+	border-radius: 36px;
+	border: 1px solid #2BDAC1;
+	padding: 11px 25px;
+}
+.header-search-btn{
+	background-color: transparent;
+	float: right;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header-search-txt{
+	background-color: transparent;
+	float: left;
+	transition: 0.3s;
+	padding: 0;
+	width: 179px;
 }
 ::placeholder {
 	color: #2BDAC1;
 	font-size: 12px;
 }
+//================================================
 .header__basket{
 	margin: 0 24px 0 0;
 }
@@ -149,7 +151,6 @@ h1{
 	margin: 0 0 151px 0;
 	position: relative;
 }
-
 .main__banner-body {
 }
 .main__banner-image {
@@ -172,12 +173,10 @@ h1{
 	position: relative;
 	z-index: 1;
 }
-
 h2{
 	font-weight: 700;
 	font-size: 45px;
 }
-
 .main__banner-text {
 	position: relative;
 	z-index: 1;
@@ -367,19 +366,17 @@ h2{
 	.header__email{
 		display: none;
 	}
-	.search-header__input{
-		padding: 11px 0 11px 25px;
-		border-radius: 20px;
-		background-color: transparent;
-		color: #2BDAC1;
-		width: 35px;
-		height: 35px;
+	.header-search-txt{
+		width: 0;
 	}
-	.search-header__button {
-		position: absolute;
-		background-color: transparent;
-		top: 10px;
-		left: 10px;
+	.header-search-box{
+		height: 35px;
+		padding: 10px;
+	}
+	.header-search-box:hover{
+		.header-search-txt{
+			width: 50px;
+		}
 	}
 	.icon-search:before {
 		content: "\e900";
@@ -396,7 +393,7 @@ h2{
 	}
 	.header-item__flex{
 		justify-content: space-between;
-		flex: 0 0 187px;
+		flex: 0 0 200px;
 	}
 	.basket-link{
 		width: 35px;
@@ -653,6 +650,17 @@ h2{
 	}
 	.main-content__row {
 		margin: -322px 0 0 0 ;
+	}
+	.header-item__flex{
+		flex: 0 0 187px;
+	}
+	.header-search-txt{
+		font-size: 8px;
+	}
+	.header-search-box:hover{
+		.header-search-txt{
+			width: 34px;
+		}
 	}
 }
 
